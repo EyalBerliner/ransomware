@@ -1,3 +1,0 @@
-C:\Users\Eyal\Documents\visual studio 2015\Projects\ransomeware1\ransomeware\ransomeware1\bin\Debug\ransomeware1.exe.config
-C:\Users\Eyal\Documents\visual studio 2015\Projects\ransomeware1\ransomeware\ransomeware1\obj\Debug\ransomeware1.exe
-C:\Users\Eyal\Documents\visual studio 2015\Projects\ransomeware1\ransomeware\ransomeware1\obj\Debug\ransomeware1.pdb
