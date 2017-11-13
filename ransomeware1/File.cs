@@ -1,25 +1,25 @@
 ﻿using Microsoft.WindowsAzure.Storage; // Namespace for CloudStorageAccount
-using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
+using Microsoft.WindowsAzure.Storage.File; // Namespace for File storage types
 using System;
 
-public static class Blob_Storage
+public static class File_Storage
 {
-    public static void iterate_blobs(CloudStorageAccount storageAccount)
+    public static void iterate_files(CloudStorageAccount storageAccount)
     {
 
-        // Create the blob client.
-        CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+        // Create the file client.
+        CloudFileClient fileClient = storageAccount.CreateCloudFileClient();
 
-        foreach (CloudBlobContainer containter in blobClient.ListContainers())
+        foreach (CloudFileShare share in fileClient.ListShares())
         {
 
             // Retrieve reference to a previously created container.
-            CloudBlobContainer cont = blobClient.GetContainerReference(containter.Name);
+            CloudFileShare shr = fileClient.GetShareReference(share.Name);
 
             // Loop over items within the container and output the length and URI.
             /*
              like the, iterate containers, and encrypt them reversibly*/
-            foreach (IListBlobItem item in cont.ListBlobs(null, false))
+            foreach (CloudFileDirectory item in shr.###(null, false))
             {
                 if (item.GetType() == typeof(CloudBlockBlob))
                 {
