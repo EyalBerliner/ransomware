@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Blob.cs" />
+    <Compile Include="File.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="utils.cs" />
     <Compile Include="Program.cs" />
